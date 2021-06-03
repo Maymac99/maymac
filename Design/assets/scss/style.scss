@@ -1,0 +1,15 @@
+$primary: #f00;
+$primary-fg: #fff;
+$scrollColor : #ddd;
+$lightColor : #fff;
+$darkColor : #000;
+
+
+@import './bootstrap/bootstrap';
+
+@import './mixins/rem',
+        './mixins/scrollbar';
+
+@import './components/general',
+        './components/loader';
+

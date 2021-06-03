@@ -1,0 +1,17 @@
+// @include scrollbar();
+@mixin scrollbar($w: 8, $h: 8) {
+    scrollbar-color: $scrollColor;
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0px $scrollColor;
+       -webkit-box-shadow: inset 0 0 0px $scrollColor;
+        background-color:lighten($color: $scrollColor, $amount: 35%);
+        
+    }
+    &::-webkit-scrollbar {
+        width: #{$w + "px"};
+        background-color: lighten($color: $scrollColor, $amount: 35%);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $scrollColor;
+    }
+  }
